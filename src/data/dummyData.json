@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "videoUrl": "https://www.youtube.com/embed/qP23CtUUKOE?si=fztZQIUX_CCrpjdL",
+    "assessment": {
+      "type": "multiple-choice",
+      "question": "Which is the largest rainforest in the world?",
+      "options": ["Amazon Rainforest", "Congo Rainforest", "Sundarbans"],
+      "correctAnswer": "Amazon Rainforest"
+    }
+  },
+  {
+    "id": 2,
+    "videoUrl": "https://www.youtube.com/embed/dbwHx29c4e0?si=FACKtsItSwpZPfMP",
+    "assessment": {
+      "type": "multiple-choice",
+      "question": "Which natural phenomenon causes the Aurora Borealis?",
+      "options": ["Solar winds", "Volcanic eruptions", "Ocean currents"],
+      "correctAnswer": "Solar winds"
+    }
+  },
+  {
+    "id": 3,
+    "videoUrl": "https://www.youtube.com/embed/qyt_4c2HBpU?si=GZTGQBE5pLOUHhRF",
+    "assessment": {
+      "type": "multiple-choice",
+      "question": "What is the tallest type of grass in the world?",
+      "options": ["Bamboo", "Sugarcane", "Elephant Grass"],
+      "correctAnswer": "Bamboo"
+    }
+  },
+  {
+    "id": 4,
+    "videoUrl": "https://www.youtube.com/embed/TJuVm5p4TI0?si=1euwav4y4emkvlqR",
+    "assessment": {
+      "type": "multiple-choice",
+      "question": "Which is the largest living organism on Earth?",
+      "options": ["Blue Whale", "Honey Fungus", "Sequoia Tree"],
+      "correctAnswer": "Honey Fungus"
+    }
+  },
+  {
+    "id": 5,
+    "videoUrl": "https://www.youtube.com/embed/A5QsSk0wC8w?si=_ngghB84SQOL-Hh8",
+    "assessment": {
+      "type": "multiple-choice",
+      "question": "What percentage of Earth's surface is covered by water?",
+      "options": ["50%", "75%", "85%"],
+      "correctAnswer": "75%"
+    }
+  },
+  {
+    "id": 6,
+    "videoUrl": "hhttps://www.youtube.com/embed/gGoeLfN17Sg?si=DAMsuiWnTqIq6UY8",
+    "assessment": {
+      "type": "multiple-choice",
+      "question": "Which desert is the largest hot desert in the world?",
+      "options": ["Sahara", "Gobi", "Kalahari"],
+      "correctAnswer": "Sahara"
+    }
+  },
+  {
+    "id": 7,
+    "videoUrl": "https://www.youtube.com/embed/qP23CtUUKOE?si=-cQ-MM1JVCk0s_cJ",
+    "assessment": {
+      "type": "multiple-choice",
+      "question": "Which ocean is the largest by surface area?",
+      "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean"],
+      "correctAnswer": "Pacific Ocean"
+    }
+  }
+]
