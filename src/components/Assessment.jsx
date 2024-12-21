@@ -1,4 +1,5 @@
-import  { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 
 const Assessment = ({ assessment, onComplete }) => {
   const [userAnswer, setUserAnswer] = useState("");
@@ -14,22 +15,20 @@ const Assessment = ({ assessment, onComplete }) => {
   };
 
   return (
-    <div className="assessment-container">
+    <div className="space-y-4">
       <h3 className="text-lg font-semibold mb-4">{assessment.question}</h3>
       {assessment.type === "multiple-choice" ? (
         assessment.options.map((option, index) => (
-          <div key={index} className="mb-2">
-            <label className="flex items-center space-x-2">
-              <input
-                type="radio"
-                name="answer"
-                value={option}
-                onChange={(e) => setUserAnswer(e.target.value)}
-                className="form-radio text-blue-600"
-              />
-              <span>{option}</span>
-            </label>
-          </div>
+          <label key={index} className="flex items-center space-x-2 mb-2">
+            <input
+              type="radio"
+              name="answer"
+              value={option}
+              onChange={(e) => setUserAnswer(e.target.value)}
+              className="form-radio text-blue-600"
+            />
+            <span>{option}</span>
+          </label>
         ))
       ) : (
         <textarea
@@ -45,7 +44,7 @@ const Assessment = ({ assessment, onComplete }) => {
       >
         Submit
       </button>
-      {feedback && <p className="mt-2 text-sm font-medium text-green-500">{feedback}</p>}
+      {feedback && <p className="mt-2 text-sm text-green-500">{feedback}</p>}
     </div>
   );
 };

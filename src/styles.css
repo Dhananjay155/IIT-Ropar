@@ -1,93 +1,15 @@
-.dark body {
-  background-color: black;
-  color: white;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.app {
-  width: 80%;
-  max-width: 1200px; 
-  padding: 20px;
-  margin: 100px;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.video-container {
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.video-container iframe {
-  width: 80%;
-  max-width: 800px; 
-  height: 450px;
-  border-radius: 10px;
-}
-
-.assessment-container {
-  margin-top: 20px;
-  text-align: left;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  min-height: 100px;
+body {
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50;
 }
 
 button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #4cacaf;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  @apply px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2;
 }
 
-button:hover {
-  background-color: #000000;
-}
-
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-button:focus {
-  outline: none;
-  box-shadow: 0 0 5px #4caf50;
-}
-
-/* Theme Toggle button */
-.fixed {
-  position: fixed;
-  top: 500px;
-  right: 20px;
-}
-
-.fixed button {
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.fixed button:hover {
-  background-color: #555;
+textarea {
+  @apply w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-300;
 }

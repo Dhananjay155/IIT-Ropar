@@ -1,10 +1,18 @@
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 
 const VideoPlayer = ({ videoUrl, onVideoEnd }) => {
   useEffect(() => {
     const handleMessage = (event) => {
-      const data = JSON.parse(event.data);
-      if (data.event === "onStateChange" && data.info === 0) {
+      let data;
+      try {
+        data = typeof event.data === "string" ? JSON.parse(event.data) : event.data;
+      } catch {
+        console.error("Invalid JSON message:", event.data);
+        return;
+      }
+
+      if (data?.event === "onStateChange" && data?.info === 0) {
         onVideoEnd();
       }
     };
