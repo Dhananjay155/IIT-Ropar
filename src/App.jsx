@@ -8,7 +8,7 @@ import lessonData from "./data/dummyData.json";
 
 const ProgressBar = ({ progress }) => (
   <div className="relative pt-1">
-    <div className="flex mb-2 items-center justify-between">
+    <div className="flex m-6 mb-2 items-center justify-between">
       <span className="text-xs font-semibold inline-block py-1 uppercase">Progress</span>
       <span className="text-xs font-semibold inline-block py-1 uppercase">{Math.round(progress)}%</span>
     </div>
